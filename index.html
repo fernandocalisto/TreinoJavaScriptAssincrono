@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>CodeConnect</title>
+</head>
+
+<body>
+    <aside>
+        <img src="./img/Logo.svg" alt="CodeConnect Logo">
+        <nav>
+            <ul class="link-list">
+                <li>
+                    <a href="#" class="highlighted-link">Publish</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/feed.svg">
+                        Feed
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/account_circle.svg">
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/info.svg">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/logout.svg">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <div class="container-upload-image">
+            <div class="container-image">
+                <img src="./img/imagem1.png" alt="" class="main-image">
+            </div>
+            <button id="upload-btn">Load Image</button>
+            <input type="file" id="image-upload" accept="image/png, image/jpeg" style="display: none" />
+            <div class="container-name-image">
+                <p>project-image.png</p>
+                <img src="./img/close.svg">
+            </div>
+        </div>
+        <div class="description-container">
+            <h2>New Project</h2>
+            <form>
+                <div>
+                    <label for="name">Project Name</label>
+                    <input type="text" id="name" name="name"/>
+                </div>
+                <div>
+                    <label for="description">Description</label>
+
+                      
+                    <textarea type="text" id="description" name="description"></textarea>
+                </div>
+                <div>
+                    <label for="category">Tags</label>
+                    <input type="text" name="category" id="input-tags"/>
+                </div>
+                
+                <ul class="tag-list"></ul>
+                <div class="container-btn">
+                    <button class="discard-btn">Discard</button>
+                    <button class="post-btn">Publish</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
